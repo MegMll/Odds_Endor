@@ -3,7 +3,7 @@ import sqlite3
 from pandas import read_sql_query
 import json
 
-import empire
+from destroy_death_star import empire
 
 def main(file_hunter, file_mission):
 	#get info 
@@ -30,4 +30,7 @@ def main(file_hunter, file_mission):
 	print(prob)
 
 if __name__=='__main__':
+	if len(sys.argv) < 3:
+		print("Usage - python3 get_prob.py file_hunter.json file_mission.json")
+		exit()
 	main(sys.argv[1], sys.argv[2])
