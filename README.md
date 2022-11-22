@@ -22,3 +22,7 @@ cd Odds_Endor
 python3 manage.py runserver
 ```
 Afterwards, open your browser, and go to http://127.0.0.1:8000/
+Follow the instruction on the page in order to get the odds.
+
+***
+Hope it helps the millenium falcon to destroy the death star ! 
