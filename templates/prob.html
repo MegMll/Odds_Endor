@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Destroy Death Star</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/app.css' %}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <div class="jumbotron">
+    <div class="container text-center">
+      <h1>Can They Make it on Time ?</h1>
+      <p align="justify">The Death Star - the Empire's ultimate weapon - is almost operational and is currently approaching the Endor planet. The countdown has started.
+      <p align="justify"> Han Solo, Chewbacca, Leia and C3PO are currently on Tatooine boarding on the Millennium Falcon. They must reach Endor to join the Rebel fleet and destroy the Death Star before it annihilates the planet. </p>
+      <p align="justify">The Empire has hired the best bounty hunters in the galaxy to capture the Millennium Falcon and stop it from joining the rebel fleet. <b>If you have any information about where their location, please help us ! </b></p>
+    </div>
+  </div>
+
+  <div class="container text-center">
+      <div class="col-sm-12">
+        <div class="form">
+          
+        </div>
+        <button id="end-button" type="button" onclick="back_to_start()">Try Again</button>
+      </div>
+  </div>
+  <script type="text/javascript">
+    var proba = {{proba|safe}};
+    if (proba != -1)
+    {
+      $('.form').html('<h1 id="proba"></h1>');
+      var disp = "Odds they make it to Endor is <p> <b>" + proba +"%</b></p>";
+      document.getElementById("proba").innerHTML = disp;
+    }
+    function back_to_start()
+    {
+      window.location.replace("{% url 'home' %}");
+    }
+  </script>
+
+</body>
+</html>

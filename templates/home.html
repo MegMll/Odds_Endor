@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Destroy Death Star</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/app.css' %}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <div class="jumbotron">
+    <div class="container text-center">
+      <h1>Can They Make it on Time ?</h1>
+      <p align="justify">The Death Star - the Empire's ultimate weapon - is almost operational and is currently approaching the Endor planet. The countdown has started.
+      <p align="justify"> Han Solo, Chewbacca, Leia and C3PO are currently on Tatooine boarding on the Millennium Falcon. They must reach Endor to join the Rebel fleet and destroy the Death Star before it annihilates the planet. </p>
+      <p align="justify">The Empire has hired the best bounty hunters in the galaxy to capture the Millennium Falcon and stop it from joining the rebel fleet. <b>If you have any information about where their location, please help us ! </b></p>
+    </div>
+  </div>
+
+  <div class="container text-center">
+      <div class="col-sm-12">
+        <div class="form">
+          <h1>Upload information about bounty hunters location</h1>
+
+           <!-- IMAGE UPLOAD FORM -->
+          <form enctype="multipart/form-data" method="POST">
+                <div class="section">Note: Only json files are allowed.</div>
+                <div class="inner-wrap">
+                  <label><input type="file" id="empire" name="empire_info" /></label>
+                  <div class="button-section">
+                    <input type="submit" name="Upload" value="Upload Info"/>
+                  </div>
+                </div>
+            </div>
+          </form>
+        </div>
+      </div>
+  </div>
+</body>
+</html>

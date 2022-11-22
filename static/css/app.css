@@ -1,0 +1,77 @@
+ <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+
+    /* Remove the jumbotron's default bottom margin */
+     .jumbotron {
+      background: #219EBC;
+    }
+
+     /* Form Styling */
+    .form{
+        width:500px;
+        padding: 5px 30px;
+        margin:10px auto;
+        background: #FFF;
+    }
+    .form .inner-wrap{
+        padding: 20px;
+        background: #F8F8F8;
+        border-radius: 6px;
+        margin-bottom: 15px;
+        font-size: 22px;
+    }
+    .form h1{
+        padding: 5px 20px 5px 20px;
+        margin: -30px -30px 30px -30px;
+        color: #000000;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+        font: normal 30px 'Cabin', serif;
+    }
+    .form label{
+        display: block;
+        font: 13px 'Cabin', serif;
+        color: #888;
+        margin-bottom: 15px;
+    }
+    .form input[type="file"]{
+        display: block;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        width: 100%;
+        padding: 8px;
+        font-size:14px;
+        border-radius: 6px;
+        -webkit-border-radius:6px;
+        -moz-border-radius:6px;
+        border: 2px solid #fff;
+        box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+        -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+        -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+    }
+    .form .section{
+        font: normal 15px 'Cabin', serif;
+        color: #2A88AD;
+        margin-bottom: 5px;
+    }
+
+    .form input[type="button"],
+    .form input[type="submit"]{
+        background: #219EBC;
+        padding: 8px 20px 8px 20px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        color: #fff;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+        font: normal 30px 'Cabin', serif;
+        -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+        -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+        box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+        border: 1px solid #257C9E;
+        font-size: 15px;
+    }
