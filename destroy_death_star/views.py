@@ -10,8 +10,6 @@ import json
 
 from .empire import Empire
 
-from .forms import UploadFileForm
-
 def create_empire():
     file_mission = "./info/millennium-falcon.json"
     with open(file_mission, 'r') as f:
